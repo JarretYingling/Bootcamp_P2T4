@@ -1,0 +1,28 @@
+{
+  "name": "bootcamp_P2T4",
+  "version": "1.0.0",
+  "description": "Project 2 Team 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JarretYingling/Bootcamp_P2T4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JarretYingling/Bootcamp_P2T4/issues"
+  },
+  "homepage": "https://github.com/JarretYingling/Bootcamp_P2T4#readme",
+  "dependencies": {
+    "eslint": "^5.15.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mocha": "^6.0.2",
+    "mysql2": "^1.6.5",
+    "sequelize": "^4.43.0"
+  }
+}
