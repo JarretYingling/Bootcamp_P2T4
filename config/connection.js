@@ -1,5 +1,4 @@
 "use strict";
-/*eslint no-undef: "error"*/
 /*eslint-env node*/
 
 // require dotenv
@@ -13,3 +12,12 @@ let Sequelize = require("sequelize");
 
 // create mysql connection with sequelize
 let sequelize = new Sequelize("stocks_db");
+
+
+/*
+tblStocks = sqlTable(tbl_stocks);
+sequelize.tblStocks.hasMany(tblStockPrices);
+
+tblStockPrices = sqlTable(tbl_stock_prices);
+sequelize.tblStockPrices.belongsTo(tblStocks);
+*/

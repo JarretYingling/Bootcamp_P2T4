@@ -22,8 +22,10 @@
     "eslint": "^5.15.1",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "mocha": "^6.0.2",
     "mysql2": "^1.6.5",
     "sequelize": "^4.43.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
   }
 }

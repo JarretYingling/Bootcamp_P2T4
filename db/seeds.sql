@@ -2,19 +2,26 @@ USE stock_picks_db;
 
 TRUNCATE TABLE tbl_stocks;
 
-INSERT INTO tbl_stocks(stock_ticker, stock_name)
+INSERT INTO tbl_stocks
+  (stock_name, stock_ticker)
   VALUES
-    ('S&P', 'S&P 500'),
-    ('DJI', 'Dow Jones Ind Avg'),
-    ('NASDAQ', 'NASDAQ'),
-    ('JPM', 'JP Morgan Chase'),
-    ('BAC', 'Bank of AMerica'),
-    ('WFC', 'Wells Fargo'),
-    ('AAPL', 'Apple'),
-    ('GOOGL', 'Google');
+    ('S&P 500', 'SAP500'),
+    ('Dow Jones Ind Avg', 'DJI'),
+    ('NASDAQ', 'NASD'),
+    ('JP Morgan Chase', 'JPM'),
+    ('Bank of America', 'BAC'),
+    ('Wells Fargo', 'WFC'),
+    ('Apple', 'AAPL'),
+    ('Google', 'GOOGL');
+
+INSERT INTO tbl_positions
+  (user_name, stock_ticker, number_shares)
+  VALUES
+    ('CASH', 100000);
 
     
-INSERT INTO tbl_stock_prices(stock_id, price_period, price_date, stock_price)
+INSERT INTO tbl_stock_prices
+  (stock_ticker, price_period, price_date, stock_price)
   VALUES
     ('S&P', 1, '2008-5-1', 1385.97),
     ('S&P', 2, '2008-6-1', 1399.62),
@@ -123,4 +130,16 @@ INSERT INTO tbl_stock_prices(stock_id, price_period, price_date, stock_price)
     ('AMZN', 9, '2009-1-1', 51.35),
     ('AMZN', 10, '2009-2-1', 58.57),
     ('AMZN', 11, '2009-3-1', 63.94),
-    ('AMZN', 12, '2019-3-1', 1655.13);
+    ('AMZN', 12, '2019-3-1', 1655.13),
+    ('CASH', 1, '2008-5-1', 1),
+    ('CASH', 2, '2008-6-1', 1),
+    ('CASH', 3, '2008-7-1', 1),
+    ('CASH', 4, '2008-8-1', 1),
+    ('CASH', 5, '2008-9-1', 1),
+    ('CASH', 6, '2008-10-1', 1),
+    ('CASH', 7, '2008-11-1', 1),
+    ('CASH', 8, '2008-12-1', 1),
+    ('CASH', 9, '2009-1-1', 1),
+    ('CASH', 10, '2009-2-1', 1),
+    ('CASH', 11, '2009-3-1', 1),
+    ('CASH', 12, '2019-3-1', 1);
